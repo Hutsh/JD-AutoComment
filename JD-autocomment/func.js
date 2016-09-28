@@ -1,5 +1,7 @@
 function addcomment(){
 	item=document.getElementsByClassName('f-item f-goods');
+	star52=document.getElementsByClassName('star5');
+	for(w in star52){star52[w].click();console.log(w);}
 	for(j=0;j<item.length;j++){
 		console.log("第"+j+"个商品");
 		star5 = item[j].getElementsByClassName('star5');
