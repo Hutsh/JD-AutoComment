@@ -1,11 +1,14 @@
 function addcomment(){
+	stars=document.getElementsByClassName('star star5');
+	for(var l=0;l<stars.length;l++){
+		stars[l].click();
+		//console.log("第"+l+"个");
+	}
 	item=document.getElementsByClassName('f-item f-goods');
-	star52=document.getElementsByClassName('star5');
-	for(w in star52){star52[w].click();console.log(w);}
-	for(j=0;j<item.length;j++){
+	for(var j=0;j<item.length;j++){
 		console.log("第"+j+"个商品");
-		star5 = item[j].getElementsByClassName('star5');
-		for(var i=0;i<star5.length;i++){star5[i].click();}
+		//star5 = item[j].getElementsByClassName('star5');
+		//for(var i=0;i<star5.length;i++){star5[i].click();}
 		mycomm="";
 		conj=["而且",",","、","感觉"];
 		comm_text = item[j].getElementsByClassName('tag-item');
@@ -21,5 +24,6 @@ function addcomment(){
 		mycomm+="。"
 		texta=item[j].getElementsByTagName('textarea');
 		texta[0].value=mycomm;
+		console.log("第"+j+"个商品评价完成");
 	}
 }
