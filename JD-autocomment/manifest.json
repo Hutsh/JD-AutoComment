@@ -4,6 +4,19 @@
 	"author": "huts",
 	"homepage_url": "http://huts.win",
 	"description": "京东自动填写评论",
+	"content_scripts":[
+		{
+			"matches": [
+				"http://club.jd.com/myJdcomments/orderVoucher.action*",
+				"https://club.jd.com/myJdcomments/orderVoucher.action*"
+			],
+			"js": [
+				"jquery-2.1.1.min.js",
+				"func.js"
+			],
+			"run_at": "document_end"
+		}
+	],
 	"permissions": [
 		"tabs", "http://club.jd.com/myJdcomments/orderVoucher.action?ruleid=*", "https://club.jd.com/myJdcomments/orderVoucher.action?ruleid=*"
 	],
