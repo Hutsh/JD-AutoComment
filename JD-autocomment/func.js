@@ -21,7 +21,7 @@ function addcomment(){
 			mycomm+=comm_text[sn].text;
 			if(i<4)mycomm+=conj[sn2];
 		}
-		mycomm+="。"
+		mycomm+="。";
 		texta=item[j].getElementsByTagName('textarea');
 		texta[0].value=mycomm;
 		console.log("第"+j+"个商品评价完成");

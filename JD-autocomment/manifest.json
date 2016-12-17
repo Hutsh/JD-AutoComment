@@ -1,19 +1,18 @@
 {
 	"name": "JD auto comment",
-	"version": "0.0.1",  
+	"version": "0.0.2",
 	"author": "huts",
 	"homepage_url": "http://huts.win",
-	"description": "京东自动填写评论",  
+	"description": "京东自动填写评论",
 	"permissions": [
 		"tabs", "http://club.jd.com/myJdcomments/orderVoucher.action?ruleid=*", "https://club.jd.com/myJdcomments/orderVoucher.action?ruleid=*"
 	],
 	"browser_action": {
 		"default_title": "JD 自动评论",
-		"default_icon": "icon.png",
-		"default_popup": "popup.html"
+		"default_icon": "icon.png"
 	},
 	"background": {
-    	"page": "background.html"
+    	"scripts": ["background.js"]
   	},
 	"manifest_version": 2
 }
